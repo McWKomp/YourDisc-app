@@ -1,0 +1,72 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form-container {
+        width: 40%;
+
+        .brand {
+            text-align: center;
+
+            h1 {
+                margin-top: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+
+        .input-container {
+            padding: 10px;
+
+            .input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid rgb(135, 135, 135);
+                box-shadow: rgb(54, 215, 129) 0px 0px 0px;
+                transition: 0.25s;
+
+                &:hover {
+                    box-shadow: rgb(54, 215, 129) 5px 5px 0px;
+                }
+            }
+
+            .button {
+                font-weight: 700;
+                padding: 10px;
+                width: 30%;
+                border: none;
+                transition: 0.4s;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px, inset rgb(40, 40, 40) 0px 0px 0px;
+                background: #fff;
+
+                &:hover {
+                    color: whitesmoke;
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px, inset rgb(40, 40, 40) 200px 0px 0px;
+                }
+            }
+        }
+    }
+
+    .table-container {
+        width: 40%;
+        padding: 10px;
+    }
+
+    td {
+        padding: 10px;
+    }
+
+}
